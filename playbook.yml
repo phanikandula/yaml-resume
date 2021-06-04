@@ -1,0 +1,13 @@
+---
+- hosts: all
+  connection: local
+  gather_facts: false
+
+  vars_files:
+    - resume.yaml
+
+  tasks:
+    - name: Generate asciidoc version of resume
+      template:
+        src: resume.jinja2
+        dest: resume.adoc

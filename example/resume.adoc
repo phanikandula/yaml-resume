@@ -1,0 +1,91 @@
+
+= First Last's Resume
+First Last <first.last@gmail.com>
+{localdatetime}
+:icons: font
+:iconfont-cdn: https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
+:mykey: myvalue
+
+== Objective
+I really love yaml, ansible, jinja2 and asciidoc. My goal is to help you create asciidoc resume from yaml file.
+
+
+
+== icon:suitcase[] Experience
+
+=== Employer 3, Inc.
+
+icon:group[] Title 3 |
+icon:calendar[] Jan 2020 - Present +
+
+Really cool work at Job 3.
+
+=== Employer 2, Inc.
+
+icon:group[] Title 2 |
+icon:calendar[] Jan 2010 - Dec 2019 +
+
+Really cool work at Job 2.
+
+ * More details here.
+
+=== Employer 1, Inc
+
+icon:group[] Title 1 |
+icon:calendar[] Jan 2000 - Dec 2009 +
+
+Lots of cool things I did at Job 1.
+
+
+
+== icon:hands-helping[] Volunteer
+
+=== Volunteer Org 2
+
+icon:group[] Host |
+icon:calendar[] Apr 2011 - Present +
+
+Some description.
+
+=== Volunteer Org 1
+
+icon:group[] Speaker |
+icon:calendar[] Apr 2001 - Apr 2011 +
+
+Some description.
+
+
+
+== icon:user-graduate[] Education
+
+=== University Name
+
+icon:group[] Course Name Here |
+icon:calendar[] Sept 1996 - Apr 2000 +
+
+
+
+
+== icon:certificate[] Certifications
+
+* Long name of certificate (Short name) |
+icon:calendar[] Jan 2021 - Present +
+
+
+
+== icon:award[] Awards
+
+* My award 1. +
+
+* My award 2. +
+
+
+== icon:address-card[] Contact
+icon:envelope[] first.last@gmail.com + 
+icon:linkedin[] https://www.linkedin.com/firstlast + 
+icon:github[] https://github.com/firstlast + 
+icon:stack-overflow[] https://stackoverflow.com/users/somenumber/first-last + 
+icon:address-card[] https://www.firstlast.com/ + 
+
+icon:clock[] Last updated at: {localdatetime}
+

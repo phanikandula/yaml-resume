@@ -1,0 +1,82 @@
+contents:
+  meta:
+    contact:
+      name: First Last
+      email: first.last@gmail.com
+      twitter: firstlast
+      website: https://www.firstlast.com/
+      github: https://github.com/firstlast
+      stackoverflow: https://stackoverflow.com/users/somenumber/first-last
+      linkedin: https://www.linkedin.com/firstlast
+    asciidoc:
+      mykey: myvalue
+
+  objective: >
+    I really love yaml, ansible, jinja2 and asciidoc. My goal is to help you create asciidoc resume from yaml file.
+
+  experience:
+    - org: Employer 3, Inc.
+      url: https://www.Employer3.com
+      titles:
+        - Title 3
+      dates:
+        start: Jan 2020
+        end: Present
+      description:
+        - Really cool work at Job 3.
+    - org: Employer 2, Inc.
+      url: https://www.Employer2.com
+      titles:
+        - Title 2
+      dates:
+        start: Jan 2010
+        end: Dec 2019
+      description:
+        - Really cool work at Job 2.
+        - More details here.
+    - org: Employer 1, Inc
+      titles:
+        - Title 1
+      dates:
+        start: Jan 2000
+        end: Dec 2009
+      description:
+        - Lots of cool things I did at Job 1.
+
+  volunteer:
+    - org: Volunteer Org 2
+      titles:
+        - Host
+      dates:
+        start: Apr 2011
+        end: Present
+      description:
+        - Some description.
+    - org: Volunteer Org 1
+      titles:
+        - Speaker
+      dates:
+        start: Apr 2001
+        end: Apr 2011
+      description:
+        - Some description.
+
+  education:
+    - org: University Name
+      location: Somecity, Country
+      titles:
+        - Course Name Here
+      dates:
+        start: Sept 1996
+        end: Apr 2000
+
+  certifications:
+    - name: Long name of certificate
+      short_name: Short name
+      dates:
+        start: Jan 2021
+        end: Present
+
+  awards:
+    - My award 1.
+    - My award 2.

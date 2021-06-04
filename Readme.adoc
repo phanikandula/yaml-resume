@@ -1,0 +1,15 @@
+= Tool to generate asciidoc resume from yaml
+
+== Setup
+
+Install make, ansible and ansible-playbook
+
+== Usage
+
+1. Update resume.yaml
+2. Run `make`
+3. Open resume.adoc
+
+== Convert to pdf etc
+
+Use asciidoc-pdf or open in browser with asciidoc live preview and print to pdf file.

@@ -1,0 +1,107 @@
+{% if contents %}
+
+{% set contact = contents['meta']['contact'] %}
+= {{contact.name}}'s Resume
+{{contact.name}} <{{contact.email}}>
+{localdatetime}
+:icons: font
+:iconfont-cdn: https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
+{% if 'asciidoc' in contents['meta'] %}
+{% for key, value in contents['meta']['asciidoc'].items() %}
+:{{key}}: {{value}}
+{% endfor %}
+{% endif %}
+
+{% if 'objective' in contents %}
+== Objective
+{{contents.objective}}
+
+{% endif %}
+
+{% if 'experience' in contents %}
+== icon:suitcase[] Experience
+
+{% for job in contents.experience %}
+=== {{job.org}}
+
+icon:group[] {{ job.titles|join(", ") }} |
+icon:calendar[] {{ job.dates.start }} - {{ job.dates.end }} +
+
+{{ job.description | join("\n\n * ")}}
+
+{% endfor %}
+
+{% endif %}
+
+{% if 'volunteer' in contents %}
+== icon:hands-helping[] Volunteer
+
+{% for job in contents.volunteer %}
+=== {{job.org}}
+
+icon:group[] {{ job.titles|join(", ") }} |
+icon:calendar[] {{ job.dates.start }} - {{ job.dates.end }} +
+
+{{ job.description | join("\n\n * ")}}
+
+{% endfor %}
+
+{% endif %}
+
+{% if 'education' in contents %}
+== icon:user-graduate[] Education
+
+{% for entry in contents.education %}
+=== {{entry.org}}
+
+icon:group[] {{ entry.titles|join(", ") }} |
+icon:calendar[] {{ entry.dates.start }} - {{ entry.dates.end }} +
+
+{% endfor %}
+
+{% endif %}
+
+
+{% if 'certifications' in contents %}
+== icon:certificate[] Certifications
+
+{% for entry in contents.certifications %}
+* {{entry.name}} ({{entry.short_name}}) |
+icon:calendar[] {{ entry.dates.start }} - {{ entry.dates.end }} +
+
+{% endfor %}
+
+{% endif %}
+
+{% if 'awards' in contents %}
+== icon:award[] Awards
+
+{% for entry in contents.awards %}
+* {{ entry }} +
+
+{% endfor %}
+
+{% endif %}
+== icon:address-card[] Contact
+{% if 'phone' in contact %}
+icon:phone[] {{contact.phone}} + 
+{% endif %}
+{% if 'email' in contact %}
+icon:envelope[] {{contact.email}} + 
+{% endif %}
+{% if 'linkedin' in contact %}
+icon:linkedin[] {{contact.linkedin}} + 
+{% endif %}
+{% if 'github' in contact %}
+icon:github[] {{contact.github}} + 
+{% endif %}
+{% if 'stackoverflow' in contact %}
+icon:stack-overflow[] {{contact.stackoverflow}} + 
+{% endif %}
+{% if 'website' in contact %}
+icon:address-card[] {{contact.website}} + 
+{% endif %}
+
+icon:clock[] Last updated at: {localdatetime}
+
+{% endif %}
