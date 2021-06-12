@@ -2,12 +2,18 @@
 
 == Setup
 
+=== Option 1 - Install locally
+
 Install make, ansible and ansible-playbook
+
+=== Option 2 - Use docker
+
+Install docker so that phanikandula/tools:ansible can be used.
 
 == Usage
 
 1. Update resume.yaml
-2. Run `make`
+2. Run `make` or `make using-docker` depending on option chosen in setup.
 3. Open resume.adoc
 
 == Convert to pdf etc
